@@ -3,5 +3,4 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return {"message": "pipeline working!"}
-
+    return {"message": "Pipeline working!"}
