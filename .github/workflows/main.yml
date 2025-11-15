@@ -17,6 +17,9 @@ jobs:
         with:
           python-version: "3.10"
 
+      - name: Add project to PYTHONPATH
+        run: echo "PYTHONPATH=$PWD" >> $GITHUB_ENV
+
       - name: Install packages
         run: pip install -r requirements.txt
 
